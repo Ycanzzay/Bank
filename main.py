@@ -1,7 +1,5 @@
-vowels_count = 0
-input_str = input("Введите строку: ")
-for char in input_str:
-    if char.lower() in "аяуюоеёэиы":
-     vowels_count += 1
+def generate_points(*args):
+    return ['.' * num for num in args]
 
-print("Количество гласных в строке:", vowels_count)
+result = generate_points(2, 4, 3)
+print(result)
