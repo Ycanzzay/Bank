@@ -1,7 +1,7 @@
-vowels_count = 0
-input_str = input("Введите строку: ")
-for char in input_str:
-    if char.lower() in "аяуюоеёэиы":
-     vowels_count += 1
-
-print("Количество гласных в строке:", vowels_count)
+N = int(input())
+k = int(input())
+l = list(range(1,N + 1))
+while len(l) !=1:
+    index = k%len(l)
+    k = index; del l[k]; k+=2
+    print(l)
